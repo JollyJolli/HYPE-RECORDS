@@ -1,4 +1,4 @@
-    /* HYPE RECORDS - Estilos principales */
+/* HYPE RECORDS - Estilos principales */
 
 /* Variables globales */
 :root {
@@ -100,6 +100,14 @@ img {
     animation: pulse 1.5s infinite alternate;
 }
 
+.logo-container .logo-img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--glow);
+    animation: pulse 1.5s infinite alternate;
+}
+
 .logo-text span {
     color: var(--color-primary);
     text-shadow: var(--glow);
@@ -130,6 +138,28 @@ header.scrolled {
     font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: 1px;
+}
+
+.logo .logo-img {
+    max-height: 50px;
+    width: auto;
+    transition: var(--transition);
+    border-radius: 4px;
+}
+
+/* Estilos responsivos para el logo */
+@media (max-width: 768px) {
+    .logo .logo-img {
+        max-height: 40px;
+    }
+    
+    .footer-logo .logo-img {
+        max-width: 120px;
+    }
+    
+    .logo-container .logo-img {
+        max-width: 200px;
+    }
 }
 
 .logo h2 span {
@@ -680,6 +710,12 @@ footer {
 .footer-logo h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.footer-logo .logo-img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 0.5rem;
 }
 
 .footer-logo span {
